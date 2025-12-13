@@ -1,0 +1,28 @@
+.card {
+  background: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: var(--spacing-sm);
+  }
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-navy);
+}
+
+.card p {
+  margin-bottom: 0;
+}
+

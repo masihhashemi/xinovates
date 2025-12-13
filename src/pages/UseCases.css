@@ -1,0 +1,65 @@
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+.use-case-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  min-height: 100%;
+}
+
+.use-case-card h2 {
+  color: var(--color-navy);
+  margin-bottom: var(--spacing-sm);
+}
+
+.use-case-problem {
+  padding: var(--spacing-sm);
+  background: var(--color-gray-bg);
+  border-radius: 6px;
+  color: var(--color-gray-dark);
+  line-height: 1.6;
+}
+
+.use-case-helps {
+  color: var(--color-gray-dark);
+}
+
+.use-case-helps ul {
+  list-style: none;
+  margin-top: var(--spacing-sm);
+  display: grid;
+  gap: var(--spacing-xs);
+}
+
+.use-case-helps li {
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.use-case-helps li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.use-case-outcome {
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 2px solid var(--color-gray-bg);
+  color: var(--color-blue);
+  font-size: 1.125rem;
+}
+

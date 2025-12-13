@@ -1,0 +1,63 @@
+.paper-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.paper-card h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-navy);
+}
+
+.paper-summary {
+  font-size: 1.125rem;
+  color: var(--color-gray-dark);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-lg);
+}
+
+.paper-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .paper-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .paper-actions .btn {
+    width: 100%;
+  }
+}
+
+.blog-list {
+  display: grid;
+  gap: var(--spacing-md);
+  max-width: 800px;
+  margin: var(--spacing-lg) auto 0;
+}
+
+.blog-card {
+  transition: all 0.3s;
+}
+
+.blog-card:hover {
+  cursor: pointer;
+}
+
+.blog-card h3 {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-navy);
+}
+
+.blog-placeholder {
+  color: var(--color-gray-text);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
