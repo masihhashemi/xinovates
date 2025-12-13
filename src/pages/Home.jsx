@@ -32,7 +32,7 @@ function Home() {
             </div>
             <div className="hero-visual">
               <img 
-                src="/assets/images/hero-illustration.svg" 
+                src={`${import.meta.env.BASE_URL}assets/images/hero-illustration.svg`}
                 alt="Innovation workflow with AI support at each stage."
                 className="hero-image"
               />

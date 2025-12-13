@@ -7,23 +7,25 @@ function Team() {
     window.scrollTo(0, 0)
   }, [])
 
+  const baseUrl = import.meta.env.BASE_URL
+
   const teamMembers = [
     {
       name: 'Dr. Reza Kalantarinejad',
       role: 'Founder & Lead Researcher',
-      image: '/assets/images/Dr-Reza-Kalantarinejad.jpg',
+      image: `${baseUrl}assets/images/Dr-Reza-Kalantarinejad.jpg`,
       bio: 'Academic Visitor and researcher, Saïd Business School, University of Oxford. Scientist-entrepreneur focused on AI-driven innovation and emergent technologies; ecosystem builder and programme designer.'
     },
     {
       name: 'Prof. Marc Ventresca',
       role: 'Co-founder & Strategic Advisor',
-      image: '/assets/images/Prof-Marc-Ventresca.jpg',
+      image: `${baseUrl}assets/images/Prof-Marc-Ventresca.jpg`,
       bio: 'Faculty at Saïd Business School, University of Oxford; GB Fellow at Wolfson College. Senior scholar of innovation, ecosystems, and organisational strategy; advises Xinovates on practice, scale, and impact.'
     },
     {
       name: 'Masih Hashemi',
       role: 'Product Team member',
-      image: '/assets/images/masih-hashemi.jpg',
+      image: `${baseUrl}assets/images/masih-hashemi.jpg`,
       bio: 'Masih is a dedicated researcher with specialized expertise in advanced Machine Learning and Artificial Intelligence, particularly in Reinforcement Learning, Neural Networks, and Deep Q-networks.'
     }
   ]
@@ -32,13 +34,13 @@ function Team() {
     {
       name: 'Mario Eguiluz',
       role: 'Advisor',
-      image: '/assets/images/Mario-Eguiluz.jpg',
+      image: `${baseUrl}assets/images/Mario-Eguiluz.jpg`,
       bio: 'Technology leader and entrepreneur with over a decade of experience across fintech, blockchain, and software development. Raised €26m to build Deblock. Previously held leadership roles at Ledger and Revolut.'
     },
     {
       name: 'Samuel D. Hayslett',
       role: 'Advisor',
-      image: '/assets/images/Samuel-D.-Hayslett.jpg',
+      image: `${baseUrl}assets/images/Samuel-D.-Hayslett.jpg`,
       bio: 'Samuel D. Hayslett is an accomplished entrepreneur and CEO of Music Files Inc., an entertainment production company that discovers, develops, markets, and molds artists into global brands.'
     }
   ]
