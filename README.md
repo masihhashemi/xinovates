@@ -26,6 +26,28 @@ npm run build
 
 The built files will be in the `dist` directory.
 
+## Deployment
+
+### GitHub Pages
+
+1. Build the project: `npm run build`
+2. Go to your repository Settings → Pages
+3. Source: Deploy from a branch
+4. Branch: `gh-pages` (or `main` with `/docs` folder)
+5. Folder: `/root` or `/docs` (if using docs folder)
+
+**Important:** The `base` path in `vite.config.js` is set to `/xinovates/` for GitHub Pages. If you're using a custom domain, change it to `/`.
+
+### Alternative: Vercel/Netlify
+
+For Vercel or Netlify, change the base path in `vite.config.js` to `/`:
+
+```js
+base: '/'
+```
+
+Then deploy normally - these platforms handle SPA routing automatically.
+
 ## Asset Structure
 
 Place your assets in the following locations. **Note:** The site currently uses SVG placeholders. Replace them with your actual assets:
@@ -33,13 +55,14 @@ Place your assets in the following locations. **Note:** The site currently uses 
 ### Images (replace SVG placeholders)
 - `/public/assets/images/hero-illustration.png` (or .svg)
 - `/public/assets/images/video-poster.jpg` (or .svg)
-- `/public/assets/images/team-reza.jpg` (or .svg)
-- `/public/assets/images/team-marc.jpg` (or .svg)
-- `/public/assets/images/abstract-1.png` (optional)
-- `/public/assets/images/abstract-2.png` (optional)
+- `/public/assets/images/Dr-Reza-Kalantarinejad.jpg`
+- `/public/assets/images/Prof-Marc-Ventresca.jpg`
+- `/public/assets/images/masih-hashemi.jpg`
+- `/public/assets/images/Mario-Eguiluz.jpg`
+- `/public/assets/images/Samuel-D.-Hayslett.jpg`
 
 ### Videos
-- `/public/assets/videos/xinovates-overview.mp4` (40-second overview video)
+- `/public/assets/videos/xinovate-videography.mp4` (40-second overview video)
 
 **Important:** Update the image paths in the code if you use different file extensions (e.g., .png instead of .svg).
 
@@ -73,4 +96,3 @@ Place your assets in the following locations. **Note:** The site currently uses 
   - White: #FFFFFF
 
 - Typography: Inter font family
-
