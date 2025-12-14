@@ -1,9 +1,10 @@
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-lg);
   max-width: 1100px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 @media (max-width: 768px) {
@@ -29,6 +30,7 @@
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .dark .team-card {
@@ -49,6 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .team-image {
@@ -61,11 +64,14 @@
 .team-info {
   padding: var(--spacing-md);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .team-info h2 {
   margin-bottom: var(--spacing-xs);
-  color: var(--color-navy);
+  color: var(--text-primary);
   font-size: 1.25rem;
 }
 
@@ -77,15 +83,17 @@
 }
 
 .team-bio {
-  color: var(--color-gray-dark);
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
   font-size: 0.9rem;
+  flex-grow: 1;
 }
 
 .team-linkedin {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   margin-top: var(--spacing-sm);
   color: #0077B5;
@@ -126,6 +134,7 @@
   gap: var(--spacing-lg);
   max-width: 700px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .advisory-card {
@@ -138,6 +147,7 @@
   flex-direction: column;
   align-items: center;
   padding: var(--spacing-md);
+  height: 100%;
 }
 
 .dark .advisory-card {
@@ -173,6 +183,10 @@
 .advisory-info {
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .advisory-info h3 {
@@ -193,13 +207,15 @@
   line-height: 1.5;
   margin: 0;
   font-size: 0.8rem;
+  flex-grow: 1;
 }
 
 .advisory-linkedin {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
-  margin-top: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
   color: #0077B5;
   font-size: 0.8rem;
   font-weight: 500;
