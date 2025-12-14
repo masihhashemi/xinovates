@@ -1,0 +1,12 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="400" fill="#F5F7FB"/>
+  <text x="250" y="200" font-family="Inter, sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">
+    Innovation workflow illustration
+  </text>
+  <circle cx="100" cy="100" r="30" fill="#2F6BFF" opacity="0.2"/>
+  <circle cx="250" cy="150" r="30" fill="#2F6BFF" opacity="0.4"/>
+  <circle cx="400" cy="200" r="30" fill="#2F6BFF" opacity="0.6"/>
+  <line x1="130" y1="100" x2="220" y2="150" stroke="#2F6BFF" stroke-width="2"/>
+  <line x1="280" y1="150" x2="370" y2="200" stroke="#2F6BFF" stroke-width="2"/>
+</svg>
+
