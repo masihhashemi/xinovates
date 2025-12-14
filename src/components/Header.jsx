@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import ThemeToggle from './ThemeToggle'
 import './Header.css'
 
 function Header() {
@@ -57,7 +56,6 @@ function Header() {
           </nav>
 
           <div className="header-actions">
-            <ThemeToggle />
             <Link to="/contact" className="btn btn-primary header-cta">
               Request a Demo
             </Link>

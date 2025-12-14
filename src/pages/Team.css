@@ -83,6 +83,26 @@
   font-size: 0.9rem;
 }
 
+.team-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--spacing-sm);
+  color: #0077B5;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.team-linkedin:hover {
+  color: #005885;
+}
+
+.team-linkedin svg {
+  flex-shrink: 0;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: var(--spacing-lg);
@@ -173,6 +193,26 @@
   line-height: 1.5;
   margin: 0;
   font-size: 0.8rem;
+}
+
+.advisory-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--spacing-xs);
+  color: #0077B5;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.advisory-linkedin:hover {
+  color: #005885;
+}
+
+.advisory-linkedin svg {
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
