@@ -43,14 +43,20 @@
 
 .roadmap-content {
   padding: var(--spacing-md);
-  background: var(--color-white);
+  background: var(--bg-card);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.dark .roadmap-content {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .roadmap-content h2 {
   margin-bottom: var(--spacing-sm);
-  color: var(--color-navy);
+  color: var(--text-primary);
 }
 
 .roadmap-content p {
