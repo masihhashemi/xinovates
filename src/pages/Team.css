@@ -99,23 +99,25 @@
   margin-top: var(--spacing-xs);
 }
 
-/* Advisory Board Styles - Smaller */
+/* Advisory Board Styles - Compact with circular images */
 .advisory-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .advisory-card {
   background: var(--bg-card);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md);
 }
 
 .dark .advisory-card {
@@ -129,45 +131,48 @@
 }
 
 .advisory-image-wrapper {
-  width: 100%;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
   background: var(--color-gray-bg);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  margin-bottom: var(--spacing-sm);
+  flex-shrink: 0;
 }
 
 .advisory-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .advisory-info {
-  padding: var(--spacing-sm);
+  padding: 0;
   text-align: center;
 }
 
 .advisory-info h3 {
   margin-bottom: var(--spacing-xs);
-  color: var(--color-navy);
-  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
 }
 
 .advisory-role {
   color: var(--color-blue);
   font-weight: 600;
   margin-bottom: var(--spacing-xs);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .advisory-bio {
-  color: var(--color-gray-dark);
+  color: var(--text-secondary);
   line-height: 1.5;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -195,11 +200,17 @@
   
   .advisory-grid {
     grid-template-columns: 1fr;
-    max-width: 350px;
+    max-width: 320px;
+    gap: var(--spacing-md);
   }
   
   .advisory-image-wrapper {
-    height: 180px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .advisory-card {
+    padding: var(--spacing-sm);
   }
 }
 
