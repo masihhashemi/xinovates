@@ -59,7 +59,7 @@ function App() {
   return (
     <ThemeProvider>
       <HelmetProvider>
-        <Router>
+        <Router basename="/">
           <div className="App">
             <AppContent />
           </div>
