@@ -14,7 +14,7 @@ function TeamMemberBio() {
 
   const teamMemberData = {
     'reza-kalantarinejad': {
-      name: 'Dr. Reza Kalantarinejad',
+      name: 'Reza Kalantarinejad',
       role: 'Founder & Lead Researcher',
       title: 'Academic Visitor, Researcher @ Saïd Business School, University of Oxford | AI for Scientific & Technological Innovation',
       image: `${baseUrl}assets/images/Dr-Reza-Kalantarinejad.jpg`,
@@ -39,7 +39,7 @@ function TeamMemberBio() {
       ]
     },
     'marc-ventresca': {
-      name: 'Prof. Marc Ventresca',
+      name: 'Marc Ventresca',
       role: 'Co-founder & Strategic Advisor',
       title: 'Associate Professor of Strategy & Innovation @ University of Oxford, Saïd Business School | Governing Body Fellow @ Wolfson College',
       image: `${baseUrl}assets/images/Prof-Marc-Ventresca.jpg`,

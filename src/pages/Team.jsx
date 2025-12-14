@@ -12,7 +12,7 @@ function Team() {
 
   const teamMembers = [
     {
-      name: 'Dr. Reza Kalantarinejad',
+      name: 'Reza Kalantarinejad',
       role: 'Founder & Lead Researcher',
       image: `${baseUrl}assets/images/Dr-Reza-Kalantarinejad.jpg`,
       bio: 'Academic Visitor and researcher, Saïd Business School, University of Oxford. Scientist-entrepreneur focused on AI-driven innovation and emergent technologies; ecosystem builder and programme designer.',
@@ -20,7 +20,7 @@ function Team() {
       slug: 'reza-kalantarinejad'
     },
     {
-      name: 'Prof. Marc Ventresca',
+      name: 'Marc Ventresca',
       role: 'Co-founder & Strategic Advisor',
       image: `${baseUrl}assets/images/Prof-Marc-Ventresca.jpg`,
       bio: 'Faculty at Saïd Business School, University of Oxford; GB Fellow at Wolfson College. Senior scholar of innovation, ecosystems, and organisational strategy; advises Xinovates on practice, scale, and impact.',
