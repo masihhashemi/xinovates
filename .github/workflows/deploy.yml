@@ -32,6 +32,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           destination_dir: .
-          cname: false
+          cname: true
           force_orphan: true
 
