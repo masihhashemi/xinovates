@@ -33,4 +33,5 @@ jobs:
           publish_dir: ./dist
           destination_dir: .
           cname: false
+          force_orphan: true
 
