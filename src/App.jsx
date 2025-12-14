@@ -11,6 +11,7 @@ import Features from './pages/Features'
 import UseCases from './pages/UseCases'
 import Roadmap from './pages/Roadmap'
 import Team from './pages/Team'
+import TeamMemberBio from './pages/TeamMemberBio'
 import Research from './pages/Research'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -40,6 +41,7 @@ function AppContent() {
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/team/:slug" element={<TeamMemberBio />} />
           <Route path="/research" element={<Research />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
