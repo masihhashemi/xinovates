@@ -59,7 +59,7 @@ function TeamMemberBio() {
         },
         {
           heading: 'Education',
-          content: 'Prof. Ventresca earned his degrees in politics and political philosophy, education policy analysis, and economic sociology at Stanford University.'
+          content: 'Prof. Ventresca earned his PhD in Sociology (organizations & institutions) and higher education policy from Stanford University in 1995. He also holds degrees in politics and political philosophy, and education policy analysis from Stanford University.'
         }
       ]
     },
