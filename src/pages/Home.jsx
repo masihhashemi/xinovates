@@ -28,16 +28,17 @@ function Home() {
               </p>
               <div className="hero-ctas">
                 <Button to="/contact" variant="primary">Request a Demo</Button>
-                <Button 
-                  href="#video-section" 
-                  variant="secondary"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    document.getElementById('video-section')?.scrollIntoView({ behavior: 'smooth' })
+                <button 
+                  className="btn btn-secondary"
+                  onClick={() => {
+                    const videoSection = document.getElementById('video-section')
+                    if (videoSection) {
+                      videoSection.scrollIntoView({ behavior: 'smooth' })
+                    }
                   }}
                 >
                   Watch 40s Overview
-                </Button>
+                </button>
               </div>
               <p className="trust-line">
                 Research-backed approach, inspired by leading work on AI's impact on innovation.{' '}
