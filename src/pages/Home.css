@@ -412,6 +412,10 @@
   margin-bottom: var(--spacing-md);
 }
 
+.cta-buttons .btn {
+  width: 149px;
+}
+
 .cta-secondary {
   margin-top: var(--spacing-md);
 }
