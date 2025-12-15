@@ -41,9 +41,9 @@ function Home() {
               </div>
               <p className="trust-line">
                 Research-backed approach, inspired by leading work on AI's impact on innovation.{' '}
-                <a href="https://www.sbs.ox.ac.uk/news/generative-ai-reshaping-innovation-frontiers-and-challenges" target="_blank" rel="noopener noreferrer" className="trust-link">Oxford article</a>
+                <a href="https://share.google/VTx0m10yuMM0NTkoC" target="_blank" rel="noopener noreferrer" className="trust-link">Oxford article</a>
                 {' • '}
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5088330" target="_blank" rel="noopener noreferrer" className="trust-link">SSRN paper</a>
+                <a href="https://share.google/uhKA11pit07zcbfd6" target="_blank" rel="noopener noreferrer" className="trust-link">SSRN paper</a>
               </p>
               <p className="trust-microcopy">
                 No hype. Clear outputs: assumptions, alternatives, evaluation, and next steps.
@@ -275,7 +275,7 @@ function Home() {
                 Exploring how generative AI is transforming innovation processes, from ideation to implementation, and the challenges organizations face in adoption.
               </p>
               <a 
-                href="https://www.sbs.ox.ac.uk/news/generative-ai-reshaping-innovation-frontiers-and-challenges" 
+                href="https://share.google/VTx0m10yuMM0NTkoC" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="publication-link"
@@ -290,7 +290,7 @@ function Home() {
                 A comprehensive analysis of how artificial intelligence is accelerating the innovation lifecycle and reshaping the future of scientific and technological progress.
               </p>
               <a 
-                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5088330" 
+                href="https://share.google/uhKA11pit07zcbfd6" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="publication-link"
