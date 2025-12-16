@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Button.css'
 
-function Button({ to, href, children, variant = 'primary', className = '', onClick, type = 'button' }) {
+function Button({ to, href, children, variant = 'primary', className = '', onClick, type = 'button', target, rel }) {
   const baseClass = `btn btn-${variant} ${className}`
 
   if (to) {
@@ -14,7 +14,7 @@ function Button({ to, href, children, variant = 'primary', className = '', onCli
 
   if (href) {
     return (
-      <a href={href} className={baseClass} onClick={onClick}>
+      <a href={href} className={baseClass} onClick={onClick} target={target} rel={rel}>
         {children}
       </a>
     )

@@ -313,6 +313,14 @@ function Home() {
             </p>
             <div className="cta-buttons">
               <Button to="/contact" variant="primary">Request a Demo</Button>
+              <Button 
+                href="https://xinovates-mas-idea-generator-4-masih-987704009832.us-west1.run.app" 
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Access the Product
+              </Button>
             </div>
             <p className="cta-secondary">
               <a href="/research" className="cta-link">Explore our publications</a>
