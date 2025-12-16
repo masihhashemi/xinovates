@@ -56,9 +56,14 @@ function Header() {
           </nav>
 
           <div className="header-actions">
-            <Link to="/contact" className="btn btn-primary header-cta">
-              Request a Demo
-            </Link>
+            <a 
+              href="https://xinovates-mas-idea-generator-4-masih-987704009832.us-west1.run.app"
+              className="btn btn-primary header-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Access the Product
+            </a>
           </div>
         </div>
       </div>

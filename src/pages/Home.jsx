@@ -28,17 +28,14 @@ function Home() {
               </p>
               <div className="hero-ctas">
                 <Button to="/contact" variant="primary">Request a Demo</Button>
-                <button 
-                  className="btn btn-secondary"
-                  onClick={() => {
-                    const videoSection = document.getElementById('video-section')
-                    if (videoSection) {
-                      videoSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
+                <Button 
+                  href="https://xinovates-mas-idea-generator-4-masih-987704009832.us-west1.run.app"
+                  variant="secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Watch 40s Overview
-                </button>
+                  Access the Product
+                </Button>
               </div>
               <p className="trust-line">
                 Research-backed approach, inspired by leading work on AI's impact on innovation.{' '}
