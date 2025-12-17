@@ -59,6 +59,8 @@ function Header() {
             <a 
               href="/product"
               className="btn btn-primary header-cta"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Access the Product
             </a>

@@ -31,6 +31,8 @@ function Home() {
                 <Button 
                   href="/product"
                   variant="secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Access the Product
                 </Button>
@@ -311,6 +313,8 @@ function Home() {
               <Button 
                 href="/product" 
                 variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Access the Product
               </Button>
