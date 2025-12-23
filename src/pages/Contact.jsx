@@ -46,29 +46,46 @@ function Contact() {
     return newErrors
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const newErrors = validate()
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors)
       return
     }
-    // In a real app, this would send to a backend
-    // For now, just show success message
-    setSubmitted(true)
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        role: '',
-        interest: '',
-        message: '',
-        updates: false
+    
+    try {
+      // Send to Formspree
+      const response = await fetch('https://formspree.io/f/xanyqdde', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-    }, 3000)
+      
+      if (response.ok) {
+        setSubmitted(true)
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setSubmitted(false)
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            role: '',
+            interest: '',
+            message: '',
+            updates: false
+          })
+        }, 3000)
+      } else {
+        alert('Something went wrong. Please try emailing us directly at hello@xinovates.com')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Something went wrong. Please try emailing us directly at hello@xinovates.com')
+    }
   }
 
   return (
