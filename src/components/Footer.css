@@ -58,7 +58,7 @@
 }
 
 .footer-column a:hover {
-  color: var(--color-white);
+  color: var(--color-blue);
   opacity: 1;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .footer-social a:hover {
-  color: var(--color-white);
+  color: var(--color-blue);
 }
 
 @media (max-width: 968px) {
